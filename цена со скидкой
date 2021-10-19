@@ -1,0 +1,23 @@
+using System;
+
+namespace ConsoleApplication1
+{
+  internal class Program
+  {
+    public static void Main(string[] args)
+    {
+      double a;
+      Console.WriteLine("Введи сумму покупки пж");
+      a = Convert.ToDouble(Console.ReadLine());
+      if ((a > 500) && (a <= 1000))
+      {
+        Console.Write("Цена со скидкой: {0}",  (a * 0.97));
+      }
+
+      if (a > 1000)
+      {
+        Console.WriteLine("Цена со скидкой: {0}", (a * 0.95));
+      }
+    }
+  }
+}
