@@ -1,0 +1,24 @@
+using System;
+
+namespace ConsoleApp6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int p, i, f;
+            Console.Write("p = ");
+            p = Convert.ToInt32(Console.ReadLine());
+            i = p;
+            f = 1;
+            do
+            {
+                f = f * i;
+                i = i - 1;
+            }
+            while (i > 1);
+            Console.WriteLine("p! = {0}", f);
+        }
+    }
+}
