@@ -1,6 +1,10 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ConsoleApp6
+namespace ConsoleApp1
 {
     class Program
     {
@@ -15,7 +19,7 @@ namespace ConsoleApp6
                 sum += i;
             }
             Console.WriteLine("Сумма первых {0} членов арифметической прогрессии равна {1}", n, sum);
-                       
+            Console.ReadLine();
         }
     }
 }
