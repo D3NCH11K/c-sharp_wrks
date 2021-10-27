@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i, x, n, cnt;
+            cnt = 0;
+            x = 0;
+            n = Convert.ToInt32(Console.ReadLine());
+            for (i = 1; i <= n; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    cnt++;
+                    x += i;
+                }
+
+            }
+            Console.WriteLine("x = {0} count = {1}", x, cnt);
+        }
+    }
+}
