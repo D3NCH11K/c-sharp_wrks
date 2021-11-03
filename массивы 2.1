@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Введите колчиство элементов массива:");
+            int Acnt = int.Parse(Console.ReadLine());
+            int[] A = new int[Acnt];
+            int index;
+            int min;
+            for (int i = 0; i < A.Length; i++)
+            {
+                Console.WriteLine($"Введи элемент массива с индексом {i}:");
+                A[i] = int.Parse(Console.ReadLine());
+            }
+
+            Console.WriteLine("Вывод минимального элемента массива:");
+            Console.WriteLine(min = A.Min());
+            Console.WriteLine("Вывод индекса минимального элемента массива:");
+            Console.WriteLine(index = Array.IndexOf(A, min));
+
+            Console.ReadKey();
+        }
+    }
+}
