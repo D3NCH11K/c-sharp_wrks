@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+
+            int[] Arr = new int[] { 1, -2, 4, -6, 3, -89, 664, -97 };
+            int[] Arrp = new int[] { };
+            int[] Arrn = new int[] { };
+            for (int i = 0; i < Arr.Length; i++)
+            {
+                if (Arr[i] > 0)
+                {
+                    Arrp = new int[] { Arr[i] };
+
+                }
+                else
+                {
+                    Arrn = new int[] { Arr[i] };
+                }
+            }
+            Console.WriteLine($"Массив положительных чисел:");
+            for (int i = 0; i < Arrp.Length; i++)
+                Console.WriteLine(Arrp[i]);
+            Console.WriteLine($"Массив отрицательных чисел:");
+            for (int i = 0; i < Arrn.Length; i++)
+                Console.WriteLine(Arrn[i]);
+
+            Console.ReadKey();
+        }
+    }
+}
