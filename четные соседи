@@ -1,0 +1,23 @@
+using System;
+
+namespace ConsoleApplication1
+{
+  internal class Program
+  {
+    public static void Main(string[] args)
+    {
+         var n = Convert.ToInt32((Console.ReadLine()));
+         var array = Array.ConvertAll(Console.ReadLine().Split(' '), s => int.Parse(s));
+         int sum = 0;
+         for (int i = 1; i<n-1; i++) 
+         {
+             if (array[i-1]%2==0 && array[i+1]%2==0) 
+             {
+                 sum +=1;
+             }
+         }
+         Console.WriteLine(sum);
+         Console.ReadKey();
+    }
+  }
+}
