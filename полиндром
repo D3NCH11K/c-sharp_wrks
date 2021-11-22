@@ -1,0 +1,21 @@
+using System;
+using System.Linq;
+
+namespace ConsoleApplication1
+{
+  internal class Program
+  {
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Ввод:");
+        string tex = Console.ReadLine();
+        var text = tex.Replace(" ", string.Empty);
+        text = text.ToLower();
+        char[] s = text.ToCharArray();
+        char[] f = text.ToCharArray();
+        Array.Reverse(s);
+        Console.WriteLine(f.SequenceEqual(s)); 
+        Console.ReadKey();
+   }
+ }
+}
