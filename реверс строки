@@ -1,0 +1,19 @@
+using System;
+
+namespace ConsoleApplication1
+{
+  internal class Program
+  {
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Введите число:");
+        string tex = Console.ReadLine();
+        var text = tex.Replace(" ", string.Empty);
+        text = text.ToLower();
+        char[] s = text.ToCharArray(); 
+        Array.Reverse(s);
+        Console.WriteLine(s);
+        Console.ReadKey();
+   }
+ }
+}
