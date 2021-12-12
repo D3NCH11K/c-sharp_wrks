@@ -1,0 +1,27 @@
+using System;
+using System.Linq;
+
+namespace ConsoleApplication1
+{
+  internal class Program
+           {
+               static void Perimeter(int a, int b, int c)
+               {
+                   int p = a + b + c;
+                   Console.WriteLine($"Периметр треугольника: {p}");
+               }
+               static void Main(string[] args)
+               {
+                   int x, y, z;
+                   Console.Write("Введите сторону a: ");
+                   x = int.Parse(Console.ReadLine());
+                   Console.Write("Введите сторону b: ");
+                   y = int.Parse(Console.ReadLine());
+                   Console.Write("Введите сторону c: ");
+                   z = int.Parse(Console.ReadLine());
+                   Perimeter(y, x ,z);
+                   Console.ReadKey();
+               }
+           }
+  
+}
